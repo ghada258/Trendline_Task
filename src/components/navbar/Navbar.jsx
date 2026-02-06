@@ -27,7 +27,6 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       const token = localStorage.getItem("token");
-      // fetch مباشر للـ API
       const res = await fetch(`${BASE_URL}/auth/logout`, {
         method: "POST",
         headers: {
