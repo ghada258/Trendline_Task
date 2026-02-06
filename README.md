@@ -58,16 +58,20 @@ This project demonstrates:
 ```bash
 git clone https://github.com/ghada258/Trendline_Task.git
 cd Trendline_Task
-
 npm install
-
 npm run dev
 
-## 👩‍💻 Developer
-**Ghada El-Sayed Abou El-Fotouh**  
-Front-End Developer 
-Email: ghadaelsayed20@gmail.com 
-github: https://github.com/ghada258
-linkedIn : https://www.linkedin.com/in/ghada-elsayed-
 
+🌐 Live Demo
 
+You can view the deployed project here: [Live Demo](https://trendline-task-ldtnhcr21-ghada258s-projects.vercel.app)
+
+👩‍💻 Developer
+
+Ghada El-Sayed Abou El-Fotouh
+Front-End Developer
+Email: ghadaelsayed20@gmail.com
+
+GitHub: https://github.com/ghada258
+
+LinkedIn: https://www.linkedin.com/in/ghada-elsayed-
