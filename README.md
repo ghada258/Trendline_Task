@@ -8,7 +8,8 @@ This project demonstrates:
 - Token-based authentication stored in localStorage  
 - Dashboard page displaying the logged-in user
 - Full responsiveness for desktop and mobile  
-- API integration with Trendline Marketing backend  
+- API integration with Trendline Marketing backend 
+- Logout 
 
 ---
 
