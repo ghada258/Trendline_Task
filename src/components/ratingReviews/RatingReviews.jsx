@@ -20,27 +20,27 @@ const RatingReviews = () => {
         <span className="w-12 h-1 bg-[#BE968E] mt-2"></span>
       </div>
       <div className="flex flex-col gap-10">
-        <section className="flex items-center gap-7">
-          <div>
-            <span className="text-[120px]">4,5</span>{" "}
+      <section className="flex flex-col md:flex-row items-center md:items-start gap-7">
+        <div className="flex justify-center items-center w-full md:w-auto md:justify-start md:items-baseline gap-2">
+            <span className="text-[80px] md:text-[120px]">4,5</span>
             <span className="text-[#B0B0B0] text-2xl">/5</span>
-          </div>
+            </div>
 
-          <div className="flex flex-col gap-3">
+
+
+        <div className="flex flex-col gap-3">
             {ratingsData.map((item) => (
-              <RatingLine
-                key={item.num}
-                num={item.num}
-                percentage={item.percentage}
-              />
+            <RatingLine key={item.num} num={item.num} percentage={item.percentage} />
             ))}
-          </div>
-          <div className="flex flex-col gap-4 justify-center items-center ml-auto">
+        </div>
+
+        <div className="hidden md:flex flex-col gap-4 justify-center items-center ml-auto">
             <span className="text-[#545454] text-base">Total Reviews</span>
             <span className="text-6xl font-semibold mb-4">3.0K</span>
             <MainButton img="/home_icons/chat.svg" BtnName="Add Comment" />
-          </div>
+        </div>
         </section>
+
 
         <section className="flex flex-col gap-6">
           {[...Array(4)].map((_, idx) => (
@@ -59,10 +59,10 @@ const RatingReviews = () => {
           alt="overlay"
           width={98}
           height={57}
-          className="p-2"
+          className="hidden md:block "
         />
         <button
-          className={`rounded-xl text-sm mx-auto font-semibold px-7  text-[#BE968E] flex items-center justify-center bg-[#F5F5F5]`}
+          className={`rounded-xl text-sm mx-auto font-semibold px-7 py-3  text-[#BE968E] flex items-center justify-center bg-[#F5F5F5]`}
         >
           <span>View More Comments</span>
         </button>

@@ -1,3 +1,4 @@
+"use client"
 import Footer from '@/components/footer/Footer'
 import HeadSection from '@/components/headSection/HeadSection'
 import HomePath from '@/components/homePath/HomePath'
@@ -10,22 +11,25 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className='font-Poppins'>
+    <div className='font-Poppins '>
      <Navbar/>
      <HeadSection/>
      <div className='flex justify-center mt-4'>
       <HomePath/>
      </div>
-     <div className='mx-32 flex flex-col gap-5'>
+     <div className='mx-4 md:mx-32 flex flex-col gap-5'>
       <ProductDetails/>
-      <div className=' mr-40'> 
+      <div className='mr-0 md:mr-40'> 
       <RatingReviews/>
       </div>
      </div>
-     <div className='ml-32 flex flex-col gap-5'>
+     <div className='mx-4 md:ml-32 flex flex-col gap-5'>
          <SimilarItems />
      </div>
-     <Footer/>
+     <div className='mt-20'>
+         <Footer/>
+     </div>
+    
      
    
    
